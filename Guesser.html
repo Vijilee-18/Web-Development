@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guesser</title>
+    <link rel="stylesheet" href="Guesser.css">
+    <script defer src="Guesser.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/number-guessing-favicon.png">
+</head>
+<body>
+    <div class="container">
+        <div class="heading-section">
+            <h1>Welcome To Guesser...</h1>
+        </div>
+        <div class="sections">
+            <div class="input-field">
+                <input type="number" placeholder="Enter a Number Between 1 and 10" required id="input-section" min="1" max="10">
+            </div>
+            <div class="result-field">
+                <input type="text" readonly id="result-section" placeholder="Result-field">
+            </div>
+            <div class="button">
+                <button type="submit" onclick="result_generator()">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
