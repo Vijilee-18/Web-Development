@@ -1,7 +1,10 @@
 function palindromeChecker() {
+    if(document.getElementById("input-section").value===""){
+        alert("Enter a Value");
+        return ;
+    }
     let input = document.getElementById("input-section").value;
     let str = input.toString();   
-
     let i = 0;
     let j = str.length - 1;
     let isPalindrome = true;
@@ -18,3 +21,4 @@ function palindromeChecker() {
     document.getElementById("result-section").value =
         isPalindrome ? "It's a Palindrome" : "Not a Palindrome";
 }
+
